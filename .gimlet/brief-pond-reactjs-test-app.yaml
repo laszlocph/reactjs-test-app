@@ -1,0 +1,20 @@
+app: reactjs-test-app
+env: brief-pond
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.47.0
+values:
+  gitRepository: laszlocph/reactjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    pullPolicy: Always
+    repository: 127.0.0.1:32447/reactjs-test-app
+    tag: '{{ .SHA }}'
+  ingress:
+    annotations:
+      kubernetes.io/ingress.class: nginx
+    host: reactjs-test-app.172.27.0.2.nip.io
+  resources:
+    ignore: true
