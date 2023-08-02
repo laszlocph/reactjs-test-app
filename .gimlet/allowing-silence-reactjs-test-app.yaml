@@ -1,0 +1,17 @@
+app: reactjs-test-app
+env: allowing-silence
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.47.0
+values:
+  containerPort: 3000
+  gitRepository: laszlocph/reactjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    pullPolicy: Always
+    repository: 127.0.0.1:32447/reactjs-test-app
+    tag: '{{ .SHA }}'
+  resources:
+    ignore: true
