@@ -18,4 +18,4 @@ values:
   ingress:
     annotations:
       kubernetes.io/ingress.class: nginx
-    host: https://172-18-0-2.nip.io/
+    host: 172-18-0-2.nip.io
