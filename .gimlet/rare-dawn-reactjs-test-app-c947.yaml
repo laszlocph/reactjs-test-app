@@ -1,0 +1,17 @@
+app: reactjs-test-app-c947
+env: rare-dawn
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.57.0
+values:
+  containerPort: 80
+  gitRepository: laszlocph/reactjs-test-app
+  gitSha: '{{ .SHA }}'
+  image:
+    repository: nginx
+    tag: 1.19.3
+  replicas: 1
+  resources:
+    ignoreLimits: true
