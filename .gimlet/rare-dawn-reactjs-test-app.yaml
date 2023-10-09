@@ -1,0 +1,20 @@
+app: reactjs-test-app
+env: rare-dawn
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: static-site
+  version: 0.57.0
+values:
+  buildImage: node:latest
+  buildScript: |-
+    # !/usr/bin/env bash
+
+    npm install
+    npm run build
+
+    echo hello
+  builtAssets: build/
+  gitCloneUrl: https://github.com/gimlet-io/reactjs-test-app.git
+  gitRepository: laszlocph/reactjs-test-app
+  gitSha: '{{ .SHA }}'
