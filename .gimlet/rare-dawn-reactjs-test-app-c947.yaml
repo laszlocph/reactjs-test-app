@@ -10,8 +10,8 @@ values:
   gitRepository: laszlocph/reactjs-test-app
   gitSha: '{{ .SHA }}'
   image:
-    repository: nginx214325432534
+    repository: nginx
     tag: 1.19.3
-  replicas: 1
+  replicas: 6
   resources:
     ignoreLimits: true
