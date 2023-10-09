@@ -10,7 +10,7 @@ values:
   gitRepository: laszlocph/reactjs-test-app
   gitSha: '{{ .SHA }}'
   image:
-    repository: nginx
+    repository: nginx214325432534
     tag: 1.19.3
   replicas: 1
   resources:
