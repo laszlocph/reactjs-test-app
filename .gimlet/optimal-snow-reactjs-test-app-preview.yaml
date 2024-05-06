@@ -8,7 +8,7 @@ values:
   buildImage: node:latest
   buildScript: |-
     # !/usr/bin/env bash
-
+    echo hello
     npm install
     npm run build
   builtAssets: build/
