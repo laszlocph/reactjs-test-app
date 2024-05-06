@@ -1,0 +1,16 @@
+app: reactjs-test-app
+env: optimal-snow
+namespace: default
+chart:
+  name: https://github.com/gimlet-io/onechart.git?branch=simplified-schema&path=/charts/static-site/
+values:
+  buildImage: node:latest
+  buildScript: |-
+    # !/usr/bin/env bash
+
+    npm install
+    npm run build
+  builtAssets: build/
+  gitCloneUrl: https://github.com/laszlocph/reactjs-test-app.git
+  gitRepository: laszlocph/reactjs-test-app
+  gitSha: '{{ .SHA }}'
