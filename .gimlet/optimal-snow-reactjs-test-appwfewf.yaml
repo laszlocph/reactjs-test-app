@@ -1,0 +1,15 @@
+app: reactjs-test-appwfewf
+env: optimal-snow
+namespace: default
+chart:
+  name: https://github.com/gimlet-io/onechart.git?branch=simplified-schema&path=/charts/static-site/
+values:
+  gitCloneUrl: https://github.com/laszlocph/reactjs-test-app.git
+  gitRepository: laszlocph/reactjs-test-app
+  gitSha: '{{ .SHA }}'
+  ingress:
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt
+      kubernetes.io/ingress.class: nginx
+    host: laszlocph-reactjs-test-app.alma.hu
+    tlsEnabled: true
