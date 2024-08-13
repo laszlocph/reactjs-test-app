@@ -11,5 +11,8 @@ values:
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt
       kubernetes.io/ingress.class: nginx
+      nginx.ingress.kubernetes.io/auth-signin: https://auth.alma.hu/oauth2/start?rd=/redirect/$http_host$escaped_request_uri
+      nginx.ingress.kubernetes.io/auth-url: https://auth.alma.hu/oauth2/auth
     host: laszlocph-reactjs-test-app.alma.hu
+    protectWithOauthProxy: true
     tlsEnabled: true
