@@ -16,3 +16,7 @@ values:
     host: laszlocph-reactjs-test-app.alma.hu
     protectWithOauthProxy: true
     tlsEnabled: true
+  sealedSecrets:
+    newKey: AgAbQ+4/lV60VDN0g2lrNhcKh5IVG2RPJtu0j2t7iqBfh7qsOzH9OWcEvsti1qyJpYpTNXcXRnpQKON8//jek/Vl7fNNKcciY05GUEoSSld4C0DD5DRKTZDHGBMyrI71FlTPBOxvka5jKSHVYml8+F3e69kiZcJYKaDGffjdcoTE/TvaEPa6q0umL32GJUGh1aO2WkQgJ+p2mUxIumuYiz8Tr5aRHhpgun3m/fs3JcokJ1Jy2kVG/13obMUWewt15erm7WlPAlW//G+I+tKN2xiKfiUjg3DLtyqD5FuLfJR8q7shUraththqvxjXWY/Fwfzb124SFXj88QE9y/v5D3iwEYtf8S+c0CzpOlbToD0ZqhDRDpD97kFSijJPb3p6JByFgRP4C2hx1d8e05kAJcf+vml9yKUSD5gRAApP8REvfS814JDymbvi1R1wLzkqwaNi50JfymQJOA6Ugso28zwweVFj/d1iQl0ARQeGLW1AJD6u7E6AvMViEIfgfNLG6xPTgpOZCmB8hIeLPQYIJFq0/1ctT161LXMBqevtpZI234F4F/c34MtSH8GUdyn6U08V/O7I93sQ9l0IYHOs5OgyYzlHMdVDTZ547cD6J13P+n3VH2NDeevrCRK+GBnyAZ1IcWjiq1q2mDTGt/Ki5sdUBUIgKuIPB1hXvnWMoXnH5TLLVA8RPVdXs4tLYUr4n9twGL22
+  vars:
+    newKey: New Value
