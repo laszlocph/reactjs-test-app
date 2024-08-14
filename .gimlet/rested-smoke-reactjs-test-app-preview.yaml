@@ -1,0 +1,16 @@
+app: reactjs-test-app-preview
+env: rested-smoke
+preview: true
+namespace: default
+chart:
+  name: https://github.com/gimlet-io/onechart.git?branch=simplified-schema&path=/charts/static-site/
+values:
+  gitCloneUrl: https://github.com/laszlocph/reactjs-test-app.git
+  gitRepository: laszlocph/reactjs-test-app
+  gitSha: '{{ .SHA }}'
+  ingress:
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt
+      kubernetes.io/ingress.class: nginx
+    host: reactjs-test-app-preview-qdbteyip.gimlet.app
+    tlsEnabled: true
